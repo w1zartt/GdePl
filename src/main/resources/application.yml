@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: app
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${datasource_url:jdbc:postgresql://db:5434}/app
+    username: ${datasource_username:admin}
+    password: ${datasource_password:admin}
+  liquibase:
+    change-log: classpath:db/changelog.yml
+

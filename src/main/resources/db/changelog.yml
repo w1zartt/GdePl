@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: D_M
+      changes:
+        - sqlFile:
+            path: scripts/0.1/0-create-users.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
