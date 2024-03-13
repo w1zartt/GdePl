@@ -4,9 +4,10 @@ import com.gdepl.app.data.dto.UserDto;
 import com.gdepl.app.data.entity.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
+import org.mapstruct.MappingConstants;
 import org.mapstruct.MappingTarget;
 
-@Mapper(componentModel = "spring")
+@Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
 public interface UserMapper {
 
     @Mapping(target = "id", ignore = true)

@@ -8,3 +8,12 @@ databaseChangeLog:
             relativeToChangelogFile: true
             splitStatements: true
             stripComments: true
+  - changeSet:
+      id: 2
+      author: D_M
+      changes:
+        - sqlFile:
+            path: scripts/0.1/1-create-shop-and-shop-type.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
